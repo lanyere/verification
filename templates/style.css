@@ -1,0 +1,82 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+body {
+    font-family:'Courier New', Courier, monospace;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+    background-color: white;
+}
+
+img, picture, svg, video {
+    display: block;
+    min-width: 100%;
+}
+
+.welcome {
+    padding: 20px;
+
+    font-size: 24px;
+    color: darkblue;
+}
+
+.welcome-text {
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.center {
+    text-align: center;
+    margin-inline: auto;
+}
+
+.form-intro {
+    outline: 1px red;
+}
+
+input {
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.form-btn {
+    cursor: pointer;
+    margin-bottom: 5px;
+    border: 1px solid grey;
+    background-color: rgba(0,0,0,0.05);
+}
+
+.wrong {
+    animation: 1s infinite alternate pulse;
+}
+
+.WrongMessage {
+    margin-top: 2px;
+    font-size: 18px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid red;
+    width: 350px;
+}
+
+@keyframes pulse {
+    0% {border: 1px solid red;}
+    25% {border: 1px solid #990000}
+    50% {border: 1px solid #ff4c4c}
+    75% {border: 1px solid #990000}
+    100% {border: 1px solid red;}
+}
